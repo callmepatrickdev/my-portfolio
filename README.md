@@ -1,5 +1,7 @@
 ## 🌟 Comprehensive Portfolio Features
 
+## Patrick's portfolio is live at: https://callmepatrickdev.github.io/my-portfolio/
+
 This portfolio is an advanced, responsive, single-page application built using semantic HTML5, modern CSS3 (Custom Properties, Flexbox, CSS Grid), and vanilla JavaScript. Below is a breakdown of every active feature implemented within the architecture:
 
 ### 1. 🌓 Intelligent Theme Engine (Dark & Light Mode)
