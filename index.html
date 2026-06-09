@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patrick | IT Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <div class="dot animate-pulse"></div>
+      <span>Patrick • Portfolio</span>
+    </div>
+
+    <button id="menu-toggle" class="menu-btn" aria-label="Open Menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+
+    <nav id="nav-menu" class="nav">
+      <a href="#">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero fade-in">
+      <div class="hero-left">
+        <div class="status-badge">
+          <span class="status-dot"></span> Available for Projects
+        </div>
+        <h1>Hello, I'm <span class="text-gradient">Patrick</span></h1>
+        
+        <p style="font-weight: bold;" class="subtitle font-mono">
+          A <span id="typing-text" class="typing-highlight"></span><span class="cursor">|</span>
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#projects">Explore Work</a>
+          <a class="btn secondary" href="/assets/Resume.docx" download="Resume.docx">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download Resume
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a class="btn ghost github-btn" href="https://github.com/callmepatrickdev" target="_blank" rel="noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            GitHub
+          </a>
+          <a class="btn ghost linkedin-btn" href="https://linkedin.com/in/patrick-y-241841408" target="_blank" rel="noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            LinkedIn
+          </a>
+          <a class="btn ghost snapchat-btn" href="https://www.snapchat.com/add/he_sent32?share_id=6bfFCBqioo8&locale=en-US" target="_blank" rel="noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-3.9 0-5.5 2.5-5.5 5.2 0 .5.1 1.2.3 1.8-.7.2-1.3.6-1.3 1.4 0 .7.5 1.1 1.1 1.2.1.4.3.7.6 1-.7.4-1.2 1.1-1.2 2 0 1.2.9 2 2.2 2 .3 0 .6-.1.8-.2.5.6 1.4 1 2.5 1 .6 0 1.1-.1 1.5-.4.4.3.9.4 1.5.4 1.1 0 2-.4 2.5-1 .2.1.5.2.8.2 1.3 0 2.2-.8 2.2-2 0-.9-.5-1.6-1.2-2 .3-.3.5-.6.6-1 .6-.1 1.1-.5 1.1-1.2 0-.8-.6-1.2-1.3-1.4.2-.6.3-1.3.3-1.8C17.5 4.5 15.9 2 12 2zm0 16.5c-3.5 0-5.5-1.5-6.5-2.5-.2-.2-.2-.5 0-.7.3-.3.8-.2 1.1.1.8.8 2.4 1.9 5.4 1.9 3 0 4.6-1.1 5.4-1.9.3-.3.8-.4 1.1-.1.2.2.2.5 0 .7-1 1-3 2.5-6.5 2.5z"/></svg>
+            Snapchat
+          </a>
+        </div>
+
+        <div class="meta">
+          <span class="pill">HTML5 & CSS3</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">PHP & SQL</span>
+          <span class="pill">Digital Systems</span>
+          <span class="pill">Formspree</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="image-wrapper">
+          <img class="me" src="/assets/profile.jpeg" alt="Patrick's Portrait"/>
+        </div>
+        <div class="card small dynamic-card">
+          <div class="card-title">Current Focus</div>
+          <div class="card-text">On mastering React, TypeScript and full-stack development while building responsive, scalable and user-friendly web applications.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume-section" class="section">
+      <div class="card resume-container">
+        <div class="resume-banner-info">
+          <div class="resume-info">
+            <h2>Professional Profile & Resume</h2>
+            <p>Review a brief overview of my technical expertise or download the complete CV for offline tracking.</p>
+          </div>
+          <a class="btn primary" href="/assets/Resume.docx" download="Resume.docx">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download Complete CV
+          </a>
+        </div>
+
+        <div class="resume-preview-sheet">
+          <div class="preview-header">
+            <h3>PATRICK YANKEY</h3>
+            <p class="preview-title">Computer Science Student & Web Developer</p>
+          </div>
+          <div class="preview-body">
+            <div class="preview-column">
+              <h4>Core Competencies</h4>
+              <ul>
+                <li>Web Architecture (HTML5, CSS3, JavaScript)</li>
+                <li>Database Implementations (PHP, MySQL)</li>
+                <li>Digital Logic & Computer Systems Architecture</li>
+                <li>Hardware Diagnostics & Engineering</li>
+              </ul>
+            </div>
+            <div class="preview-column">
+              <h4>Key Highlights</h4>
+              <ul>
+                <li>Building highly adaptive, responsive interfaces.</li>
+                <li>Automating database structures using modular backend code.</li>
+                <li>Fusing creative UI perspectives into web solutions.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Featured Projects</h2>
+        <p>A curated showcase of applications built to target actual challenges and real-world operations.</p>
+      </div>
+
+      <div class="grid">
+        <article class="project card-hover">
+          <button class="project-media" data-img="/assets/To-do-app.png" data-title="My To-Do App">
+            <img src="/assets/To-do-app.png" alt="To-Do App Preview" />
+          </button>
+          <div class="project-body">
+            <h3>My To-Do App</h3>
+            <p>Create, manage, and track your daily tasks with ease, Keep everything organised </p>
+            <div class="tags">
+              <span>JavaScript</span><span>HTML5</span><span>CSS Grid</span>
+            </div>
+            <div class="links">
+              <a class="link" href="#" target="_blank" rel="noreferrer"></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project card-hover">
+          <button class="project-media" data-img="/assets/updated-calculator-project.png" data-title="Arithmetic Calculator App">
+            <img src="/assets/updated-calculator-project.png" alt="Arithmetic Calculator Preview" />
+          </button>
+          <div class="project-body">
+            <h3>Arithmetic Calculator App</h3>
+            <p>An interactive calculator application that performs basic arithmetic operations efficiently while providing a smooth user experience across devices.</p>
+            <div class="tags">
+              <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+            </div>
+            <div class="links">
+              <a class="link" href="#" target="_blank" rel="noreferrer"></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project card-hover">
+          <button class="project-media" data-img="/assets/Authentication-form.png" data-title="Secure PHP Authentication Framework">
+            <img src="/assets/Authentication-form.png" alt="Authentication Form Preview" />
+          </button>
+          <div class="project-body">
+            <h3>PHP Based Authentication Form</h3>
+            <p>A PHP-based login application designed to handle user authentication efficiently while maintaining a simple and intuitive interface.</p>
+            <div class="tags">
+              <span>PHP</span><span>MySQL</span><span>HTML5</span><span>CSS3</span>
+            </div>
+            <div class="links">
+              <a class="link" href="#" target="_blank" rel="noreferrer"></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Expertise & Tools</h2>
+        <p>Core skill structures categorized by structural proficiency and execution stacks.</p>
+      </div>
+
+      <div class="skills">
+        <div class="card modern-card">
+          <div class="card-title">Frontend Technologies</div>
+          <div class="skills-flex">
+            <span class="skill-chip">HTML5</span>
+            <span class="skill-chip">CSS3</span>
+            <span class="skill-chip">JavaScript (ES6+)</span>
+            <span class="skill-chip">PHP Programming</span>
+            <span class="skill-chip">Relational SQL</span>
+          </div>
+        </div>
+
+        <div class="card modern-card">
+          <div class="card-title">Development Tools</div>
+          <div class="skills-flex">
+            <span class="skill-chip">Git </span>
+            <span class="skill-chip">GitHub</span>
+            <span class="skill-chip">VS Code </span>
+            <span class="skill-chip">Chrome DevTools</span>
+            <span class="skill-chip">npm</span>
+          </div>
+        </div>
+
+        <div class="card modern-card">
+          <div class="card-title">Professional Skills</div>
+          <div class="skills-flex">
+            <span class="skill-chip">Problem Solving</span>
+            <span class="skill-chip">Debugging</span>
+            <span class="skill-chip">Team Collaboration</span>
+            <span class="skill-chip">Communication / Presentation</span>
+            <span class="skill-chip">Continuous Learning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>About Me</h2>
+      </div>
+      
+      <div class="about-grid">
+        <div class="card detailed-about">
+          <p>
+            Passionate Software Developer dedicated to building responsive, user-friendly and high-performance web applications. Skilled in JavaScript, HTML5, CSS3, Git, GitHub, little PHP and modern frontend technologies, and planning with growing in React, TypeScript and full-stack development. Focused on creating clean code, solving real-world problems and continuously learning new technologies to enhance my skill set. With a background in digital systems and 3D design, I bring a unique perspective to software development, combining technical expertise with creative problem-solving to deliver innovative solutions.
+          </p>
+        </div>
+
+        <div class="card education-card">
+          <div class="card-title">Educational Matrix</div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2024 - Present</div>
+              <h4 class="timeline-title">Takoradi Technical University</h4>
+              <p class="timeline-desc">Computer Science</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2021 - 2023</div>
+              <h4 class="timeline-title">Kikam Technical Institute</h4>
+              <p class="timeline-desc">Computer Hardware Technology Programme</p>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2001 - 2021</div>
+              <h4 class="timeline-title">Word Alive Christian School</h4>
+              <p class="timeline-desc">Primary & JHS Education</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Get In Touch Let's Build Together!</h2>
+        <p>Have an interesting project proposal or want to collaborate? Drop a message directly below.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <form id="contactForm" action="https://formspree.io/f/xbdeowej" method="POST" class="contact-form">
+          <div class="form-group">
+            <input type="text" name="name" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="email" name="_replyto" required placeholder="Your Email Address">
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="4" required placeholder="Your Message Content"></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display:none" />
+          <button type="submit" class="btn primary form-submit">Send Message</button>
+        </form>
+      </div>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Patrick. All rights reserved.</span>
+      </footer>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="1"></div>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <div class="modal-title" id="modalTitle">Image View</div>
+        <button class="modal-x" data-close="1" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImg" src="" alt="Project Presentation" />
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
